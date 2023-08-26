@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Air Quality Monitoring</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/assets/img/favicon.png" rel="icon">
+  <link href="../static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS Files -->
+  <link href="../static/assets/css/variables.css" rel="stylesheet">
+  <link href="../static/assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: ZenBlog - v1.2.1
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Author: BootstrapMade.com
+  * License: https:///bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+
+    #bg-data
+    {
+      background: url('../static/b1.jpg');
+      background-size: cover;
+      width:auto;
+      height:auto;
+    }
+    .data
+    {
+      background-color: rgba(39, 185, 185, 0.575);
+      color: rgb(244, 240, 240);
+      width:80%;
+      padding:30px;
+      margin:50px auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Air Quality Prediction</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="{{url_for('about')}}">About</a></li>
+          <li><a href="{{url_for('predict')}}">Predict</a></li>
+          
+        </ul>
+      </nav><!-- .navbar -->
+    </header>
+        <section>
+          <div id="bg-data">
+          <div class="data">
+            
+              <h1>Background</h1>
+              <p>Air pollution has become a serious environmental  issue. It is respon- sible for hundreds of fatalities each year and it poses a serious threat to human health and  environment.   It  leads to global warming,  greenhouse eﬀect and  it also causes respiratory  problems  like asthma,  lung cancer  etc.   It  is important to predict  the quality  of the air to regulate  air pollution.  Air quality  index (AQI) is a measure of air quality which describes the level of air pollution.  Machine learning algorithms can help in predicting  the AQI. Linear  regression, LASSO regression, ridge regression, and SVR algorithms  were used to forecast the AQI.</p>
+
+              <h1>Ob jectives</h1>
+              <p>The  main  objective  of the thesis  is to  build  and  train  a models us- ing machine learning algorithms  and ﬁnd out the most accurate  model in predicting the AQI.</p>
+
+              <h1>Methods</h1>
+              <p>Literature Review and Experimentation were chosen as methods  to an- swer the  research  questions.    There  are  a  number  of research  papers  written  on prediction  of AQI and  literature review helped us a lot in research  and  references. Experimentation is also used to ﬁnd out the most accurate  machine learning model in predicting  the air quality.   In the  experimentation phase,  four machine  learning algorithms  were trained  with  air quality  data  to create  predictive  models for fore- casting AQI.
+              </p>
+
+                <h1>Results</h1>
+                <p>Algorithms  like Logistic Regression,  Ridge  Regression,  LASSO Regres- sion, and  SVR are selected through  literature review.  Upon experimentation and training  the algorithm  with  "Air  Quality  Data  in India  (2015-2020)" data  set has showed that Ridge  regression has  the least  MAE and  RMSE  and  the  highest  R- square, which shows that  it has the highest performance in predicting  the AQI.</p> 
+
+            </p>
+            <h1>How does AQI Work?</h1>
+            <p>Think of the AQI as a yardstick that runs from 0 to 500. The higher the AQI value, the greater the level of air pollution and the greater the health concern. For example, an AQI value of 50 or below represents good air quality, while an AQI value over 300 represents hazardous air quality.
+
+              For each pollutant an AQI value of 100 generally corresponds to an ambient air concentration that equals the level of the short-term national ambient air quality standard for protection of public health. AQI values at or below 100 are generally thought of as satisfactory. When AQI values are above 100, air quality is unhealthy: at first for certain sensitive groups of people, then for everyone as AQI values get higher.
+              
+              The AQI is divided into six categories. Each category corresponds to a different level of health concern. Each category also has a specific color. The color makes it easy for people to quickly determine whether air quality is reaching unhealthy levels in their communities.</p>
+              <center><img src="../static/Screenshot 2023-05-02 130050.png" width="800px" height="300px"/></center>
+          </div>
+        </div>
+        </section>
+      
+    
+
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Vendor JS Files -->
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/assets/vendor/aos/aos.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

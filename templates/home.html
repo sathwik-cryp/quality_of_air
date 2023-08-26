@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Quality</title>
+
+<style>
+	body
+	{
+		background-color: cadetblue;
+	}
+	.out-put
+	{
+		background-color: beige;
+		padding: 20px;
+		font-size: large;
+		font-weight: bolder;
+		width:90%;
+		margin: 0px auto;
+		text-align: center;
+		clear: both;
+	}
+	.left
+	{
+		float:left;
+		width:45%;
+		padding:10px;
+	}
+	.left .form
+	{
+		width:100%;
+	}
+	.right
+	{
+		float:right;
+		width:45%;
+		padding:10px;
+	}
+	input[type="text"]
+	{
+		width:90%;
+		margin:10px auto;
+		padding:10px;
+		border: 2px solid black;
+	}
+	input[type="submit"]
+	{
+		padding:10px;
+		border:none;
+		width:50%;
+		margin:20px auto;
+	}
+</style>
+</head>
+<body>
+
+<div class="left">
+	<div class="form">
+		<form action="/" method="post">
+		<h1>ENTER DETAILS TO PREDICT AQI</h1>
+		<input type="text" name="a" required/>
+		<br/>
+		<input type="text" name="b" required/>
+		<br/>
+		<input type="text" name="c" required/>
+		<br/>
+		<input type="text" name="d" required/>
+		<br/>
+		<input type="text" name="e" required/>
+		<br/>
+		<input type="text" name="f" required/>
+		<br/>
+		<input type="text" name="g" required/>
+		<br/>
+		<input type="text" name="h" required/>
+		<br/>
+		<input type="text" name="i" required/>
+		<br/>
+		<input type="text" name="j" required/>
+		<br/>
+		<input type="text" name="k" required/>
+		<br/>
+		<input type="submit" name="submit"/>
+	</form>
+	</div>
+	
+
+</div>
+<div class="right">
+	<h1>ENTER DETAILS TO PREDICT AQI</h1>
+<img src="../static/All_Graph.png" width="650px" height="650px"/>
+</div>
+<div class="out-put">
+
+	<p>
+		<span><b>Predicted AQI is:</b></span>{{ prediction_text }}
+	</p>
+	
+	<a href="{{url_for('about')}}">Test</a>
+	</div>
+</body>
+</html>
